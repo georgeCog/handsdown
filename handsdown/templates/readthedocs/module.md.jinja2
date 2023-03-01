@@ -18,7 +18,7 @@
 {{ md_document.subtitle -}}
 {% endif -%}
 
-{{ module_record.get_docstring() }}
+{{ module_record._get_docstring() }}
 
 {% if module_record.get_documented_attribute_strings() -%}
 #### Attributes
