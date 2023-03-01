@@ -18,6 +18,8 @@
 {{ md_document.subtitle -}}
 {% endif -%}
 
+{{ module_record.get_docstring() }}
+
 {% if module_record.get_documented_attribute_strings() -%}
 #### Attributes
 {% for attrubute in module_record.get_documented_attribute_strings() -%}
